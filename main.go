@@ -5,8 +5,13 @@ import "fmt"
 var (
 	Reset = "\033[0m"
 
-	SpecialBold      = "\033[1m"
-	SpecialUnderline = "\033[4m"
+	SpecialBold          = "\033[1m"
+	SpecialUnderline     = "\033[4m"
+	SpecialDim           = "\033[2m"
+	SpecialItalic        = "\033[3m"
+	SpecialInverse       = "\033[7m"
+	SpecialHide          = "\033[8m"
+	SpecialStrikethrough = "\033[9m"
 
 	ColorBlack  = "\033[30m"
 	ColorRed    = "\033[31m"
@@ -108,4 +113,32 @@ func BgGray(message string) string {
 
 func BgWhite(message string) string {
 	return color(BackgroundColorWhite, message)
+}
+
+func Bold(message string) string {
+	return color(SpecialBold, message)
+}
+
+func Underline(message string) string {
+	return color(SpecialUnderline, message)
+}
+
+func Dim(message string) string {
+	return color(SpecialDim, message)
+}
+
+func Italic(message string) string {
+	return color(SpecialItalic, message)
+}
+
+func Inverse(message string) string {
+	return color(SpecialInverse, message)
+}
+
+func Hide(message string) string {
+	return color(SpecialHide, message)
+}
+
+func Strikethrough(message string) string {
+	return color(SpecialStrikethrough, message)
 }
