@@ -73,3 +73,39 @@ func Gray(message string) string {
 func White(message string) string {
 	return color(ColorWhite, message)
 }
+
+func BgBlack(message string) string {
+	return color(BackgroundColorBlack, message)
+}
+
+func BgRed(message string) string {
+	return color(BackgroundColorRed, message)
+}
+
+func BgGreen(message string) string {
+	return color(BackgroundColorGreen, message)
+}
+
+func BgYellow(message string) string {
+	return color(BackgroundColorYellow, message)
+}
+
+func BgBlue(message string) string {
+	return color(BackgroundColorBlue, message)
+}
+
+func BgPurple(message string) string {
+	return color(BackgroundColorPurple, message)
+}
+
+func BgCyan(message string) string {
+	return color(BackgroundColorCyan, message)
+}
+
+func BgGray(message string) string {
+	return color(BackgroundColorGray, message)
+}
+
+func BgWhite(message string) string {
+	return color(BackgroundColorWhite, message)
+}
