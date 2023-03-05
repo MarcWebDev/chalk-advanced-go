@@ -13,25 +13,41 @@ var (
 	SpecialHide          = "\033[8m"
 	SpecialStrikethrough = "\033[9m"
 
-	ColorBlack  = "\033[30m"
-	ColorRed    = "\033[31m"
-	ColorGreen  = "\033[32m"
-	ColorYellow = "\033[33m"
-	ColorBlue   = "\033[34m"
-	ColorPurple = "\033[35m"
-	ColorCyan   = "\033[36m"
-	ColorGray   = "\033[37m"
-	ColorWhite  = "\033[97m"
+	ColorBlack   = "\033[30m"
+	ColorRed     = "\033[31m"
+	ColorGreen   = "\033[32m"
+	ColorYellow  = "\033[33m"
+	ColorBlue    = "\033[34m"
+	ColorMagenta = "\033[35m"
+	ColorCyan    = "\033[36m"
+	ColorGray    = "\033[37m"
+	ColorWhite   = "\033[97m"
 
-	BackgroundColorBlack  = "\033[40m"
-	BackgroundColorRed    = "\033[41m"
-	BackgroundColorGreen  = "\033[42m"
-	BackgroundColorYellow = "\033[43m"
-	BackgroundColorBlue   = "\033[44m"
-	BackgroundColorPurple = "\033[45m"
-	BackgroundColorCyan   = "\033[46m"
-	BackgroundColorGray   = "\033[47m"
-	BackgroundColorWhite  = "\033[107m"
+	ColorRedBright     = "\033[91m"
+	ColorGreenBright   = "\033[92m"
+	ColorYellowBright  = "\033[93m"
+	ColorBlueBright    = "\033[94m"
+	ColorMagentaBright = "\033[95m"
+	ColorCyanBright    = "\033[96m"
+	ColorWhiteBright   = "\033[97m"
+
+	BackgroundColorBlack   = "\033[40m"
+	BackgroundColorRed     = "\033[41m"
+	BackgroundColorGreen   = "\033[42m"
+	BackgroundColorYellow  = "\033[43m"
+	BackgroundColorBlue    = "\033[44m"
+	BackgroundColorMagenta = "\033[45m"
+	BackgroundColorCyan    = "\033[46m"
+	BackgroundColorGray    = "\033[47m"
+	BackgroundColorWhite   = "\033[107m"
+
+	BackgroundColorRedBright     = "\033[101m"
+	BackgroundColorGreenBright   = "\033[102m"
+	BackgroundColorYellowBright  = "\033[103m"
+	BackgroundColorBlueBright    = "\033[104m"
+	BackgroundColorMagentaBright = "\033[105m"
+	BackgroundColorCyanBright    = "\033[106m"
+	BackgroundColorWhiteBright   = "\033[107m"
 )
 
 func color(color string, s any) string {
@@ -63,8 +79,8 @@ func Blue(message string) string {
 	return color(ColorBlue, message)
 }
 
-func Purple(message string) string {
-	return color(ColorPurple, message)
+func Magenta(message string) string {
+	return color(ColorMagenta, message)
 }
 
 func Cyan(message string) string {
@@ -99,8 +115,8 @@ func BgBlue(message string) string {
 	return color(BackgroundColorBlue, message)
 }
 
-func BgPurple(message string) string {
-	return color(BackgroundColorPurple, message)
+func BgMagenta(message string) string {
+	return color(BackgroundColorMagenta, message)
 }
 
 func BgCyan(message string) string {
@@ -141,4 +157,60 @@ func Hide(message string) string {
 
 func Strikethrough(message string) string {
 	return color(SpecialStrikethrough, message)
+}
+
+func RedBright(message string) string {
+	return color(ColorRedBright, message)
+}
+
+func GreenBright(message string) string {
+	return color(ColorGreenBright, message)
+}
+
+func YellowBright(message string) string {
+	return color(ColorYellowBright, message)
+}
+
+func BlueBright(message string) string {
+	return color(ColorBlueBright, message)
+}
+
+func MagentaBright(message string) string {
+	return color(ColorMagentaBright, message)
+}
+
+func CyanBright(message string) string {
+	return color(ColorCyanBright, message)
+}
+
+func WhiteBright(message string) string {
+	return color(ColorWhiteBright, message)
+}
+
+func bgRedBright(message string) string {
+	return color(BackgroundColorRedBright, message)
+}
+
+func bgGreenBright(message string) string {
+	return color(BackgroundColorGreenBright, message)
+}
+
+func bgYellowBright(message string) string {
+	return color(BackgroundColorYellowBright, message)
+}
+
+func bgBlueBright(message string) string {
+	return color(BackgroundColorBlueBright, message)
+}
+
+func bgMagentaBright(message string) string {
+	return color(BackgroundColorMagentaBright, message)
+}
+
+func bgCyanBright(message string) string {
+	return color(BackgroundColorCyanBright, message)
+}
+
+func bgWhiteBright(message string) string {
+	return color(BackgroundColorWhiteBright, message)
 }
