@@ -187,30 +187,30 @@ func WhiteBright(message string) string {
 	return color(ColorWhiteBright, message)
 }
 
-func bgRedBright(message string) string {
+func BgRedBright(message string) string {
 	return color(BackgroundColorRedBright, message)
 }
 
-func bgGreenBright(message string) string {
+func BgGreenBright(message string) string {
 	return color(BackgroundColorGreenBright, message)
 }
 
-func bgYellowBright(message string) string {
+func BgYellowBright(message string) string {
 	return color(BackgroundColorYellowBright, message)
 }
 
-func bgBlueBright(message string) string {
+func BgBlueBright(message string) string {
 	return color(BackgroundColorBlueBright, message)
 }
 
-func bgMagentaBright(message string) string {
+func BgMagentaBright(message string) string {
 	return color(BackgroundColorMagentaBright, message)
 }
 
-func bgCyanBright(message string) string {
+func BgCyanBright(message string) string {
 	return color(BackgroundColorCyanBright, message)
 }
 
-func bgWhiteBright(message string) string {
+func BgWhiteBright(message string) string {
 	return color(BackgroundColorWhiteBright, message)
 }
