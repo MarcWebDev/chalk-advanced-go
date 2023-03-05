@@ -1,7 +1,9 @@
 package ChalkAdvanced
 
-import "log"
+import (
+	"fmt"
+)
 
 func Black(message string) {
-	log.Printf("\\x1b[30m%v\\x1b[0m", message)
+	fmt.Printf("\\x1b[30m%v\\x1b[0m", message)
 }
