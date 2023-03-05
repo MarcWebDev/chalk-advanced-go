@@ -3,13 +3,11 @@ package ChalkAdvanced
 import "fmt"
 
 var (
-	ColorReset = "\033[0m"
+	Reset = "\033[0m"
 
-	// Special //
 	SpecialBold      = "\033[1m"
 	SpecialUnderline = "\033[4m"
 
-	// Text colors //
 	ColorBlack  = "\033[30m"
 	ColorRed    = "\033[31m"
 	ColorGreen  = "\033[32m"
@@ -20,7 +18,6 @@ var (
 	ColorGray   = "\033[37m"
 	ColorWhite  = "\033[97m"
 
-	// Background colors //
 	BackgroundColorBlack  = "\033[40m"
 	BackgroundColorRed    = "\033[41m"
 	BackgroundColorGreen  = "\033[42m"
@@ -35,12 +32,44 @@ var (
 func color(color string, s any) string {
 	switch s.(type) {
 	case string:
-		return color + s.(string) + ColorReset
+		return color + s.(string) + Reset
 	default:
-		return color + fmt.Sprint(s) + ColorReset
+		return color + fmt.Sprint(s) + Reset
 	}
 }
 
 func Black(message string) string {
 	return color(ColorBlack, message)
+}
+
+func Red(message string) string {
+	return color(ColorRed, message)
+}
+
+func Green(message string) string {
+	return color(ColorGreen, message)
+}
+
+func Yellow(message string) string {
+	return color(ColorYellow, message)
+}
+
+func Blue(message string) string {
+	return color(ColorBlue, message)
+}
+
+func Purple(message string) string {
+	return color(ColorPurple, message)
+}
+
+func Cyan(message string) string {
+	return color(ColorCyan, message)
+}
+
+func Gray(message string) string {
+	return color(ColorGray, message)
+}
+
+func White(message string) string {
+	return color(ColorWhite, message)
 }
