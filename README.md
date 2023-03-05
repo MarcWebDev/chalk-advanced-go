@@ -16,7 +16,7 @@ Chalk-advanced-go is a library that allows you to color your console output in g
 Install chalk-advanced-go
 
 ```bash
-  go get github.com/marchoffmann07/chalk-advanced-go@1.3.3
+  go get github.com/marchoffmann07/chalk-advanced-go@v1.3.3
 ```
 
 ## Code Example
