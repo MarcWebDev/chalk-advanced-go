@@ -1,6 +1,6 @@
 # chalk-advanced-go
 
-Chalk-advanced-go is a library that allows you to color your console output in go.
+Chalk-advanced-go is a library that allows you to colorize your console output in go.
 
 [![size](https://img.shields.io/github/repo-size/marchoffmann07/chalk-advanced-go?color=green&label=SIZE)](https://www.npmjs.com/package/chalk-advanced)
 
