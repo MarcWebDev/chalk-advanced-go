@@ -1,15 +1,7 @@
-package ChalkAdvancedGo
+package ChalkAdvanced
 
 import "log"
 
-func LogInfo(message string) {
-	log.Printf("INFO | %v", message)
-}
-
-func LogWarning(message string) {
-	log.Printf("WARN | %v", message)
-}
-
-func LogError(message string) {
-	log.Printf("ERROR | %v", message)
+func Black(message string) {
+	log.Printf("\\x1b[30m%v\\x1b[0m", message)
 }
